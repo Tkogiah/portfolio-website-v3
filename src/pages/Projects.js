@@ -7,7 +7,7 @@ export default function Projects() {
     return (
         <LayoutBox>
             <Navbar />
-            <Typography variant="h1">
+            <Typography variant="h2">
                 Projects
             </Typography>
         </LayoutBox>

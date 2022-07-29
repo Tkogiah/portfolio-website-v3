@@ -13,6 +13,12 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
+
+import { MAIN_COLOR, RowBox } from './styledComponents';
+import { Link } from 'react-router-dom';
+
+
+
 const drawerWidth = 240;
 const navItems = ['Home', 'Projects', 'About', 'Contact'];
 
@@ -25,20 +31,24 @@ export default function Navbar(props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+    <Box 
+    onClick={handleDrawerToggle} 
+    sx={{ textAlign: 'center', color: 'white', backgroundColor: 'black' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        MARCUS ICON
+        NAVIGATION
       </Typography>
-      <Divider />
+      <Divider  sx={{background: MAIN_COLOR, mx: 5}}/>
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
+            <ListItemButton sx={{ textAlign: 'center', color: 'white' }}>
               <ListItemText primary={item} />
             </ListItemButton>
           </ListItem>
         ))}
       </List>
+      <Divider  sx={{background: MAIN_COLOR, mx: 5}}/>
+      <img alt='icon' src='MarcusIcon.png' style={{height: '45px', width: '45px', paddingTop: 25}} />
     </Box>
   );
 
@@ -47,28 +57,35 @@ export default function Navbar(props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <AppBar component="nav" sx={{backgroundColor: 'black', py: 2}}>
-        <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
-          >
-            <MenuIcon />
-          </IconButton>
+        <Toolbar sx={{backgroundColor: 'black'}}>
+          <RowBox sx={{
+            width: '55%',
+            justifyContent: 'space-between'
+          }}>
+            <IconButton
+                color="inherit"
+                aria-label="open drawer"
+                edge="start"
+                onClick={handleDrawerToggle}
+                sx={{ mr: 2, display: { sm: 'none' } }}
+            >
+                <MenuIcon />
+            </IconButton>
+            <img alt='icon' src='MarcusIcon.png' style={{height: '45px', width: '45px'}} />
+          </RowBox>
           <Typography
             variant="h6"
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            MARCUS ICON
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
+              <Link to={`/${item === 'Home' ? '': item}`}>
               <Button key={item} sx={{ color: '#fff' }}>
                 {item}
               </Button>
+              </Link>
             ))}
           </Box>
         </Toolbar>
@@ -85,6 +102,7 @@ export default function Navbar(props) {
           sx={{
             display: { xs: 'block', sm: 'none' },
             '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+            
           }}
         >
           {drawer}

@@ -7,7 +7,7 @@ export default function AboutMe() {
     return (
         <LayoutBox>
             <Navbar />
-            <Typography variant="h1">
+            <Typography variant="h2">
                 ABOUT ME
             </Typography>
         </LayoutBox>

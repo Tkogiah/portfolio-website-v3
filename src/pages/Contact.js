@@ -7,7 +7,7 @@ export default function Contact() {
     return (
         <LayoutBox>
             <Navbar />
-            <Typography variant="h1">
+            <Typography variant="h2">
                 Contact
             </Typography>
         </LayoutBox>
