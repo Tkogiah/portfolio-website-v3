@@ -4,7 +4,8 @@
   text-align: center;
 }
 html {
-  background-color: red;
+  /* background-color: #ffc754; */
+  background-color: black;
 }
 
 .MuiDrawer-paperAnchorLeft {
