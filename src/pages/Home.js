@@ -1,55 +1,35 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Divider, Typography } from "@mui/material";
 import Navbar from "../components/Navbar";
-import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
-import { ColumnBox, LayoutBox } from "../components/styledComponents";
+import { ColumnBox, LayoutBox, RowBox, MAIN_COLOR } from "../components/styledComponents";
 const hex = 'MarcusIcon.png'
+const imageOne = 'sunset.jpeg'
+
+
+// WELCOME TO MY DIGITAL PROOF OF WORK!!
 
 export default function Homepage() {
     return (
         <Box sx={{ margin: '0px', padding: '0px'}}>
             <Navbar />
             <LayoutBox>
-                <Parallax pages={4} style={{backgroundColor: 'gray'}}>
-                    <ParallaxLayer factor={1.5} offset={0} speed={0} 
-                    style={{
-                        backgroundImage: `url(${hex})`,
-                        backgroundSize: '25%',
-                        backgroundPosition: 'top',
-                        backgroundColor: 'black',
-                        
-                        }}>
-                        <Box sx={{pt: '25%'}}>
-                            <Typography variant="h2">
-                                My name is Marcus
-                            </Typography>
-                        </Box>
-                        
-                    </ParallaxLayer>
-                        <Typography variant="h2"> hello I am here</Typography>
-                    <ParallaxLayer factor={1} offset={.9} speed={.7}
-                    style={{
-                        backgroundColor: 'blue',
-                        height: '20vh'
-                        }}>
-                        <Box>
-                            <Typography variant="h2">
-                                Developer
-                            </Typography>
-                        </Box> 
-                    </ParallaxLayer>
-                    <ParallaxLayer offset={1} speed={0}
-                    style={{
-                        backgroundColor: 'red',
-                        
-                        }}>
-                        <ColumnBox sx={{justifyContent: 'center', alignItems: 'center', textAlign: 'center'}}>
-                            <Typography variant="h2" sx={{ backgroundColor: 'green'}}>
-                                how's it going?
-                            </Typography>
-                        </ColumnBox> 
-                    </ParallaxLayer>
-                </Parallax>
+                <ColumnBox sx={{pt: '10vh'}}>
+                    <Typography variant="h1" sx={{fontSize: '50px'}}>
+                    Hi, I'm Marcus
+                    </Typography>
+                    <Divider><br/></Divider>
+                    <Divider><br/></Divider>
+                    <Typography variant="h2" sx={{fontSize: '40px'}}>
+                        Welcome
+                    </Typography>
+                    <Typography variant="h2" sx={{fontSize: '40px'}}>
+                        to my digital
+                    </Typography>
+                    <Typography variant="h2" sx={{fontSize: '40px'}}>
+                        proof of work
+                    </Typography>
+                
+                </ColumnBox>
             </LayoutBox>
         </Box>
     )
