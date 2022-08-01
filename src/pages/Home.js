@@ -1,9 +1,9 @@
-import { Box, Divider, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Navbar from "../components/Navbar";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
-import { ColumnBox, LayoutBox, RowBox, MAIN_COLOR } from "../components/styledComponents";
-const hex = 'MarcusIcon.png'
+import { LayoutBox } from "../components/styledComponents";
+
 const imageOne = 'sunset.jpeg'
 
 
@@ -40,8 +40,11 @@ export default function Homepage() {
                         backgroundRepeat: 'repeat'
                     }} />
                     <ParallaxLayer  offset={0} factor={1}  style={{backgroundColor: 'black'}}>
-                        <Typography variant="h2" sx={{pt: '20vh'}} >
-                            Hello, I am Marcus 
+                        <Typography variant="h2" sx={{
+                            pt: '30vh',
+                            
+                        }} >
+                            Hello, I am Marcus<br />Web Developer 
                         </Typography>
                     </ParallaxLayer>
                     <ParallaxLayer  offset={1.5} factor={.5}  style={{backgroundColor: 'black'}}>

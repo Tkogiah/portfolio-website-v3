@@ -1,31 +1,39 @@
+import { useRef, useEffect } from "react";
 import { Typography } from "@mui/material";
 import Navbar from "../components/Navbar";
-import { Divider } from "@mui/material"
-import { Box } from "@mui/system";
 
 import { ColumnBox, LayoutBox, RowBox, MAIN_COLOR } from "../components/styledComponents";
 import { projectList } from "./ProjectList";
-import { Link } from "react-router-dom";
+
 
 
 export default function Projects() {
+    const myRef = useRef()
+    useEffect(() => {
+        console.log('myRef', myRef.current)
+    }, [])
+
     return (
         <LayoutBox>
             <Navbar />
             <LayoutBox sx={{justifyContent: 'center', padding: '6vw'}}>
                 <Typography variant="h2" sx={{padding: '10vh 15vw'}}>
-                    Projects
+                    Recent Projects
                 </Typography>
-                <ColumnBox sx={{justifyContent: 'center', alignItems: 'center', padding: '6vw'}}>
+                <ColumnBox sx={{
+                    justifyContent: 'center', 
+                    alignItems: 'center', 
+                    padding: '6vw'
+                }}>
                     {projectList.map(project => 
                         {
-                            return <RowBox BGC={'#2b2a33'} sx={{
+                            return <RowBox key={project.id} ref={myRef} BGC={'#2b2a33'} sx={{
                                 justifyContent: 'space-evenly',
                                 flexWrap: 'wrap',
                                 alignItems: 'center',
                                 padding: '6vw 4vw',
                                 margin: '5px 4vw',
-                                borderRadius: '16px'
+                                borderRadius: '16px',
                             }}>
                                 <ColumnBox sx={{
                                     width: '50%',
@@ -33,9 +41,17 @@ export default function Projects() {
                                     alignItems: 'left',
                                     justifyContent: 'left'
                                 }}>
-
-                                    <Typography sx={{ fontSize: '40px' }}>
-                                       <a href={project.github} target='#blank' >
+                                    
+                                    <Typography sx={{ 
+                                        fontSize: '40px',
+                                        '&:hover': {
+                                            textShadow: `1px 1px ${MAIN_COLOR}`
+                                        }}}>
+                                       <a href={project.github} target='#blank' style={{
+                                        textDecoration: 'none',
+                                        color: 'inherit',
+                                        
+                                    }} >
                                             {project.title}
                                         </a> 
                                     </Typography>
