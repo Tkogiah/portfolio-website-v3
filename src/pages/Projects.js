@@ -1,8 +1,12 @@
 import { Typography } from "@mui/material";
 import Navbar from "../components/Navbar";
 import { Divider } from "@mui/material"
+import { Box } from "@mui/system";
 
 import { ColumnBox, LayoutBox, RowBox, MAIN_COLOR } from "../components/styledComponents";
+import { projectList } from "./ProjectList";
+import { Link } from "react-router-dom";
+
 
 export default function Projects() {
     return (
@@ -13,34 +17,58 @@ export default function Projects() {
                     Projects
                 </Typography>
                 <ColumnBox sx={{justifyContent: 'center', alignItems: 'center', padding: '6vw'}}>
-                    <RowBox BGC={'#2b2a33'} sx={{
-                        justifyContent: 'space-evenly',
-                        flexWrap: 'wrap', 
-                        alignItems: 'center',
-                        padding: '6vw',
-                        margin: '4vw',
-                        borderRadius: '16px'
-                    }}>
-                        <ColumnBox  sx={{
-                            width: '50%',
-                            padding: '0 5%'
-                            
-                        }}>
-                            <Typography sx={{fontSize: '40px'}}>Title</Typography>
-                            <Typography sx={{padding: '5% 0%'}}>description is going to be fairly descriptive about the specific project that I did. I think I will probably put some decent text in here to try and explain things. I will also talk about what I learned and how I struggled.</Typography>
-                            
-                            <RowBox sx={{justifyContent: 'space-around'}}>
-                                <Typography>tag</Typography>
-                                <Typography>tag</Typography>
-                                <Typography>tag</Typography>
-                            </RowBox>
-                        </ColumnBox >
-                        <ColumnBox sx={{width: '50%'}}>
+                    {projectList.map(project => 
+                        {
+                            return <RowBox BGC={'#2b2a33'} sx={{
+                                justifyContent: 'space-evenly',
+                                flexWrap: 'wrap',
+                                alignItems: 'center',
+                                padding: '6vw 4vw',
+                                margin: '5px 4vw',
+                                borderRadius: '16px'
+                            }}>
+                                <ColumnBox sx={{
+                                    width: '50%',
+                                    paddingRight: '5%',
+                                    alignItems: 'left',
+                                    justifyContent: 'left'
+                                }}>
 
-                        <iframe width="432" height="243" src="https://www.youtube.com/embed/rwSDZo6h7B4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        
-                        </ColumnBox>
-                    </RowBox>
+                                    <Typography sx={{ fontSize: '40px' }}>
+                                       <a href={project.github} target='#blank' >
+                                            {project.title}
+                                        </a> 
+                                    </Typography>
+
+
+                                    <Typography sx={{ padding: '5% 0% 10% 0%' }}>
+                                        {project.description}
+                                    </Typography>
+
+                                    <RowBox sx={{ justifyContent: 'space-around' }}>
+                                        {project.tags.map(tag => <img alt={tag.title}
+                                            src={tag.icon}
+                                            style={{
+                                                height: '45px',
+                                                width: '45px',
+                                                padding: '5px',
+                                                border: '1px solid #b6b6bb',
+                                                backgroundColor: '#42414d',
+                                                borderRadius: '8px'
+                                            }} />
+                                        )}
+                                    </RowBox>
+                                </ColumnBox>
+                                <ColumnBox sx={{ width: '50%' }}>
+                                    <iframe width="432" height="243" src={project.video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+                                </ColumnBox>
+                            </RowBox>;
+                        }
+                    )}  
+                    
+
+
+
                 </ColumnBox>
             </LayoutBox>
         </LayoutBox>

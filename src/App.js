@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 
 import './components/styles.css';
 
+
 export default function App() {
   return (
     <div className="App">

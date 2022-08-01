@@ -32,20 +32,14 @@ export default function Homepage() {
 
                 
                 </ColumnBox> */}
-                <Parallax pages={3} style={{backgroundColor: 'black'}}>
+                <Parallax pages={2} style={{backgroundColor: 'black'}}>
                     <ParallaxLayer offset={0} factor={2} speed={.1} style={{
                         backgroundImage: `url(${imageOne})`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                         backgroundRepeat: 'repeat'
                     }} />
-                    <ParallaxLayer offset={1.8} factor={1} speed={.1} style={{
-                        backgroundImage: `url(${imageOne})`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        backgroundRepeat: 'repeat'
-                    }} />
-                    <ParallaxLayer  offset={0} factor={.8}  style={{backgroundColor: 'black'}}>
+                    <ParallaxLayer  offset={0} factor={1}  style={{backgroundColor: 'black'}}>
                         <Typography variant="h2" sx={{pt: '20vh'}} >
                             Hello, I am Marcus 
                         </Typography>
