@@ -73,7 +73,7 @@ export default function Navbar(props) {
             >
                 <MenuIcon />
             </IconButton>
-            <img alt='icon' src='MarcusIcon.png' style={{height: '45px', width: '45px'}} />
+            
           </RowBox>
           <Typography
             variant="h6"

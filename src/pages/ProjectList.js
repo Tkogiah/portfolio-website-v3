@@ -128,9 +128,10 @@ export const projectList = [
         id: 6,
         title: 'Pexels API',
         description: 'This was my last project in learning the fundamentals of Javascript. I struggled to understand API calls and so I built this project to gain a deeper grasp on how authentication headers work. Pexels has an open API that you just need to request a key for. This project was what made me feel like I was starting to understand web development.',
-        video: 'THIS VIDEO NEEDS TO BE RECORDED',
+        video: 'https://www.youtube.com/embed/2svY-fFoWPQ',
         github: 'https://github.com/Tkogiah/pexels-api',
         tags: [
+
             {
                 title: 'JavaScript',
                 icon: 'js.png'

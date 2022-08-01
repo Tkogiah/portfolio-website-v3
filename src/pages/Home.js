@@ -1,67 +1,81 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Fade, Typography } from "@mui/material";
 import Navbar from "../components/Navbar";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import { Parallax } from "@react-spring/parallax";
 
-import { LayoutBox } from "../components/styledComponents";
+import { ColumnBox, LayoutBox, ParallaxPage } from "../components/styledComponents";
 
-const imageOne = 'sunset.jpeg'
+const imageOne = 'first.png'
+const imageTwo = 'second.png'
+const imageThree = 'third.png'
+const imageFour = 'fourth.png'
+const imageFive = 'fifth.png'
+const imageSix = 'sixth.png'
+const imageSeven = 'seventh.png'
 
 
 // WELCOME TO MY DIGITAL PROOF OF WORK!!
 
 export default function Homepage() {
     return (
-        <Box sx={{ margin: '0px', padding: '0px'}}>
+        <Box sx={{ margin: '0px', padding: '0px', position: 'realtive'}}>   
+            <Parallax pages={3} style={{backgroundColor: 'black'}}>
+                <ParallaxPage BGI={imageOne} 
+                offset={0}  
+                speed={-1}
+                >
+                <Fade in={true} timeout={1500} >
+                    <Typography variant="h2" sx={{
+                        pt: '30vh',
+                        transition: 'opacity 1s ease',
+                        fontWeight: 'bold'
+                    }} >
+                        Hello, I am Marcus 
+                    </Typography>
+                </Fade>
+                </ParallaxPage>
+                <ParallaxPage BGI={imageTwo} 
+                offset={0.3}
+                speed={-.2}
+                />
+                <ParallaxPage BGI={imageThree} 
+                offset={0.4}
+                speed={0.2}
+                />
+                <ParallaxPage BGI={imageSix} 
+                offset={1}
+                speed={.5}
+                />
+                <ParallaxPage BGI={imageFour} 
+                offset={0.5}
+                speed={0.2}
+                />
+                <ParallaxPage BGI={imageFive} 
+                offset={0.6}
+                speed={.4}
+                />
+                <ParallaxPage BGI={imageSix} 
+                offset={1.5}
+                speed={.1}
+                />
+                <ParallaxPage BGI={imageSix} 
+                offset={2}
+                speed={0}
+                />
+                <ParallaxPage BGI={imageSeven} 
+                offset={2}
+                speed={0}
+                style={{backgroundColor: 'black'}}
+                >
+                    <Typography variant="h2" sx={{
+                        pt: '30vh',
+                        transition: 'opacity 1s ease',
+                        color: 'white'
+                    }} >
+                        Welcome to my digital proof of work 
+                    </Typography>
+                </ParallaxPage>
+            </Parallax>
             <Navbar />
-            <LayoutBox>
-                {/* <ColumnBox sx={{pt: '10vh'}}>
-                    <Typography variant="h1" sx={{fontSize: '50px'}}>
-                    Hi, I'm Marcus
-                    </Typography>
-                    <Divider><br/></Divider>
-                    <Divider><br/></Divider>
-                    <Typography variant="h2" sx={{fontSize: '40px'}}>
-                        Welcome
-                    </Typography>
-                    <Typography variant="h2" sx={{fontSize: '40px'}}>
-                        to my digital
-                    </Typography>
-                    <Typography variant="h2" sx={{fontSize: '40px'}}>
-                        proof of work
-                    </Typography>
-
-                
-                </ColumnBox> */}
-                <Parallax pages={2} style={{backgroundColor: 'black'}}>
-                    <ParallaxLayer offset={0} factor={2} speed={.1} style={{
-                        backgroundImage: `url(${imageOne})`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        backgroundRepeat: 'repeat'
-                    }} />
-                    <ParallaxLayer  offset={0} factor={1}  style={{backgroundColor: 'black'}}>
-                        <Typography variant="h2" sx={{
-                            pt: '30vh',
-                            
-                        }} >
-                            Hello, I am Marcus<br />Web Developer 
-                        </Typography>
-                    </ParallaxLayer>
-                    <ParallaxLayer  offset={1.5} factor={.5}  style={{backgroundColor: 'black'}}>
-                        <Typography variant="h2" sx={{pt: '20vh'}} >
-                            to my digital proof of work 
-                        </Typography>
-                    </ParallaxLayer>
-                    <ParallaxLayer offset={1} factor={1}  style={{backgroundColor: 'none'}}>
-                        <Typography variant="h2" sx={{pt: '20vh'}} >
-                            Welcome
-                        </Typography>
-                    </ParallaxLayer>
-                    
-
-                </Parallax>
-                
-            </LayoutBox>
         </Box>
     )
 }

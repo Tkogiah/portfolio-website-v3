@@ -2,9 +2,8 @@ import { useRef, useEffect } from "react";
 import { Typography } from "@mui/material";
 import Navbar from "../components/Navbar";
 
-import { ColumnBox, LayoutBox, RowBox, MAIN_COLOR } from "../components/styledComponents";
+import { ColumnBox, LayoutBox, RowBox, MAIN_COLOR, ProjectBox, ICON_STYLES } from "../components/styledComponents";
 import { projectList } from "./ProjectList";
-
 
 
 export default function Projects() {
@@ -27,14 +26,8 @@ export default function Projects() {
                 }}>
                     {projectList.map(project => 
                         {
-                            return <RowBox key={project.id} ref={myRef} BGC={'#2b2a33'} sx={{
-                                justifyContent: 'space-evenly',
-                                flexWrap: 'wrap',
-                                alignItems: 'center',
-                                padding: '6vw 4vw',
-                                margin: '5px 4vw',
-                                borderRadius: '16px',
-                            }}>
+                        return (
+                            <ProjectBox key={project.id} ref={myRef} BGC={'#2b2a33'}>
                                 <ColumnBox sx={{
                                     width: '50%',
                                     paddingRight: '5%',
@@ -49,8 +42,7 @@ export default function Projects() {
                                         }}}>
                                        <a href={project.github} target='#blank' style={{
                                         textDecoration: 'none',
-                                        color: 'inherit',
-                                        
+                                        color: 'inherit'
                                     }} >
                                             {project.title}
                                         </a> 
@@ -64,27 +56,16 @@ export default function Projects() {
                                     <RowBox sx={{ justifyContent: 'space-around' }}>
                                         {project.tags.map(tag => <img alt={tag.title}
                                             src={tag.icon}
-                                            style={{
-                                                height: '45px',
-                                                width: '45px',
-                                                padding: '5px',
-                                                border: '1px solid #b6b6bb',
-                                                backgroundColor: '#42414d',
-                                                borderRadius: '8px'
-                                            }} />
+                                            style={ICON_STYLES} />
                                         )}
                                     </RowBox>
                                 </ColumnBox>
                                 <ColumnBox sx={{ width: '50%' }}>
                                     <iframe width="432" height="243" src={project.video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
                                 </ColumnBox>
-                            </RowBox>;
-                        }
+                            </ProjectBox>
+                        )}
                     )}  
-                    
-
-
-
                 </ColumnBox>
             </LayoutBox>
         </LayoutBox>
