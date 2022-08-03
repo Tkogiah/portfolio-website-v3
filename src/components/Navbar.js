@@ -114,6 +114,7 @@ export default function Navbar(props) {
                 style={{
                   paddingLeft: '100px',
                   color: '#e44828',
+                  display: 'flex'
                 }}
               >
                 <GitHubIcon sx={{height: '35px', width: '35px'}}/>
@@ -124,6 +125,7 @@ export default function Navbar(props) {
                   paddingLeft: '16px',
                   paddingRight: '16px',
                   color: '#ff0000',
+                  display: 'flex'
                 }}
               >
                 <YouTubeIcon sx={{height: '35px', width: '35px'}}/>
@@ -133,6 +135,7 @@ export default function Navbar(props) {
                 style={{
                   paddingRight: '8px',
                   color: '#0076b2',
+                  display: 'flex'
                 }}
               >
                 <LinkedInIcon sx={{height: '35px', width: '35px'}}/>

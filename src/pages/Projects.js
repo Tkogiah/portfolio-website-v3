@@ -81,7 +81,10 @@ export default function Projects() {
                                 paddingTop: '25px' 
                                 }}>
                                     <iframe className="video" width="432" height="243" src={project.video[0]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
-                                    <Typography className="video-mobile" sx={{display: 'none', fontSize: '30px'}}>
+                                    <Typography className="video-mobile" sx={{
+                                        display: 'none', 
+                                        fontSize: '25px',
+                                    }}>
                                       {project.video[0] ? <a href={project.video[1]} target='_blank'>See Video</a>: ''}  
                                         
                                     </Typography>
