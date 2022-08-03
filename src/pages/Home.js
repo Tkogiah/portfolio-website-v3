@@ -10,7 +10,7 @@ const imageThree = 'third.png'
 const imageFour = 'fourth.png'
 const imageFive = 'fifth.png'
 const imageSix = 'sixth.png'
-const imageSeven = 'seventh.png'
+// const imageSeven = 'seventh.png'
 
 
 // WELCOME TO MY DIGITAL PROOF OF WORK!!
@@ -61,7 +61,7 @@ export default function Homepage() {
                 offset={2}
                 speed={0}
                 />
-                <ParallaxPage BGI={imageSeven} 
+                <ParallaxPage 
                 offset={2}
                 speed={0}
                 style={{backgroundColor: 'black'}}
@@ -71,7 +71,7 @@ export default function Homepage() {
                         transition: 'opacity 1s ease',
                         color: 'white'
                     }} >
-                        Welcome to my digital proof of work 
+                        Feel free to <br/>check out my work 
                     </Typography>
                 </ParallaxPage>
             </Parallax>

@@ -1,6 +1,7 @@
-import {Box} from "@mui/material";
+import { Box, Icon } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { ParallaxLayer } from "@react-spring/parallax";
+
 
 export const MAIN_COLOR = '#ffc754'
 export const ICON_STYLES = {

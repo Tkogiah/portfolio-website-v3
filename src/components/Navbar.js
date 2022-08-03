@@ -12,6 +12,9 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 
 import { MAIN_COLOR, RowBox } from './styledComponents';
@@ -40,17 +43,39 @@ export default function Navbar(props) {
       <Divider  sx={{background: MAIN_COLOR, mx: 5}}/>
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
+          <ListItem disablePadding sx={{ textAlign: 'center', display: 'felx', justifyContent: 'center', alignItems: 'center'}}>
             <Link to={`/${item === 'Home' ? '': item}`}>
-                <ListItemButton sx={{ textAlign: 'center', color: 'white' }}>
+                <ListItemButton key={item} sx={{ textAlign: 'center', color: 'white' }}>
                     <ListItemText primary={item} />
                 </ListItemButton>
             </Link>
           </ListItem>
-        ))}
+        ))} 
       </List>
       <Divider  sx={{background: MAIN_COLOR, mx: 5}}/>
-      <img alt='icon' src='MarcusIcon.png' style={{height: '45px', width: '45px', paddingTop: 25}} />
+      <RowBox sx={{justifyContent: 'space-around', paddingTop: '25px'}}>
+          <a href='https://github.com/Tkogiah'
+            style={{
+              color: '#e44828',
+            }}
+          >
+            <GitHubIcon sx={{height: '45px', width: '45px'}}/>
+          </a>
+          <a href='https://www.youtube.com/channel/UCVzyGnFTHtAvRaegAGMiT8Q'
+            style={{
+              color: '#ff0000',
+            }}
+          >
+            <YouTubeIcon sx={{height: '45px', width: '45px'}}/>
+          </a>
+          <a href='https://www.linkedin.com/in/marcus-overstreet-b6694b11b/'
+            style={{
+              color: '#0076b2',
+            }}
+          >
+            <LinkedInIcon sx={{height: '45px', width: '45px'}}/>
+          </a>
+      </RowBox>
     </Box>
   );
 
@@ -80,6 +105,29 @@ export default function Navbar(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
+            <RowBox sx={{justifyContent: 'space-evenly'}}>
+              <a href='https://github.com/Tkogiah'
+                style={{
+                  color: '#e44828',
+                }}
+              >
+                <GitHubIcon sx={{height: '45px', width: '45px'}}/>
+              </a>
+              <a href='https://www.youtube.com/channel/UCVzyGnFTHtAvRaegAGMiT8Q'
+                style={{
+                  color: '#ff0000',
+                }}
+              >
+                <YouTubeIcon sx={{height: '45px', width: '45px'}}/>
+              </a>
+              <a href='https://www.linkedin.com/in/marcus-overstreet-b6694b11b/'
+                style={{
+                  color: '#0076b2',
+                }}
+              >
+                <LinkedInIcon sx={{height: '45px', width: '45px'}}/>
+              </a>
+            </RowBox>  
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
@@ -89,6 +137,7 @@ export default function Navbar(props) {
               </Button>
               </Link>
             ))}
+            
           </Box>
         </Toolbar>
       </AppBar>
