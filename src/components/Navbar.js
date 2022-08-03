@@ -131,6 +131,7 @@ export default function Navbar(props) {
               <a href='https://www.linkedin.com/in/marcus-overstreet-b6694b11b/'
                 target={'_blank'}
                 style={{
+                  paddingRight: '8px',
                   color: '#0076b2',
                 }}
               >

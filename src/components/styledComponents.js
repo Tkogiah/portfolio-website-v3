@@ -4,13 +4,14 @@ import { ParallaxLayer } from "@react-spring/parallax";
 
 
 export const MAIN_COLOR = '#ffc754'
+
 export const ICON_STYLES = {
     height: '45px',
     width: '45px',
     padding: '5px',
     border: '1px solid #b6b6bb',
     backgroundColor: '#42414d',
-    borderRadius: '8px'
+    borderRadius: '8px',
 }
 
 export const LayoutBox = styled(Box)(({BGC}) => ({

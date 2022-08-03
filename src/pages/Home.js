@@ -42,9 +42,10 @@ export default function Homepage() {
                 offset={0.4}
                 speed={0.2}
                 />
-                <ParallaxPage BGI={imageSix} 
+                <ParallaxPage 
                 offset={1}
                 speed={.5}
+                style={{backgroundColor: 'black'}}
                 />
                 <ParallaxPage BGI={imageFour} 
                 offset={0.5}
@@ -56,13 +57,15 @@ export default function Homepage() {
                 speed={.4}
                 sx={{backgroundPosition: 'top'}}
                 />
-                <ParallaxPage BGI={imageSix} 
+                <ParallaxPage  
                 offset={1.5}
                 speed={.1}
+                style={{backgroundColor: 'black'}}
                 />
-                <ParallaxPage BGI={imageSix} 
+                <ParallaxPage  
                 offset={2}
                 speed={0}
+                style={{backgroundColor: 'black'}}
                 />
                 <ParallaxPage 
                 offset={2}

@@ -11,7 +11,7 @@ export const projectList = [
                 icon: 'logo192.png'
             },
             {
-                title: 'JavaScript',
+                title: 'Java Script',
                 icon: 'js.png'
             },
             {
@@ -36,7 +36,7 @@ export const projectList = [
                 icon: 'logo192.png'
             },
             {
-                title: 'JavaScript',
+                title: 'Java Script',
                 icon: 'js.png'
             },
             {
@@ -61,7 +61,7 @@ export const projectList = [
                 icon: 'logo192.png'
             },
             {
-                title: 'JavaScript',
+                title: 'Java Script',
                 icon: 'js.png'
             },
             {
@@ -86,7 +86,7 @@ export const projectList = [
                 icon: 'logo192.png'
             },
             {
-                title: 'JavaScript',
+                title: 'Java Script',
                 icon: 'js.png'
             },
             {
@@ -111,7 +111,7 @@ export const projectList = [
                 icon: 'logo192.png'
             },
             {
-                title: 'JavaScript',
+                title: 'Java Script',
                 icon: 'js.png'
             },
             {
@@ -133,7 +133,7 @@ export const projectList = [
         tags: [
 
             {
-                title: 'JavaScript',
+                title: 'Java Script',
                 icon: 'js.png'
             },
             {

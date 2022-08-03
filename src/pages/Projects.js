@@ -56,9 +56,20 @@ export default function Projects() {
                                     </Typography>
 
                                     <RowBox sx={{ justifyContent: 'space-evenly', width: '100%' }}>
-                                        {project.tags.map(tag => <img alt={tag.title}
-                                            src={tag.icon}
-                                            style={ICON_STYLES} />
+                                        {project.tags.map(tag => 
+                                            <div className="flip-card">
+                                            <div className="flip-card-inner">
+                                              <div className="flip-card-front">
+                                                <img 
+                                                src={tag.icon} 
+                                                alt={tag.title} 
+                                                style={ICON_STYLES} />
+                                              </div>
+                                              <div className="flip-card-back">
+                                                <h4>{tag.title}</h4>
+                                              </div>
+                                            </div>
+                                          </div> 
                                         )}
                                     </RowBox>
                                 </ColumnBox>
