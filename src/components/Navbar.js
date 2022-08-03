@@ -43,7 +43,7 @@ export default function Navbar(props) {
       <Divider  sx={{background: MAIN_COLOR, mx: 5}}/>
       <List>
         {navItems.map((item) => (
-          <ListItem disablePadding sx={{ textAlign: 'center', display: 'felx', justifyContent: 'center', alignItems: 'center'}}>
+          <ListItem disablePadding sx={{justifyContent: 'center'}}>
             <Link to={`/${item === 'Home' ? '': item}`}>
                 <ListItemButton key={item} sx={{ textAlign: 'center', color: 'white' }}>
                     <ListItemText primary={item} />
@@ -55,6 +55,7 @@ export default function Navbar(props) {
       <Divider  sx={{background: MAIN_COLOR, mx: 5}}/>
       <RowBox sx={{justifyContent: 'space-around', paddingTop: '25px'}}>
           <a href='https://github.com/Tkogiah'
+            target={'_blank'}
             style={{
               color: '#e44828',
             }}
@@ -62,6 +63,7 @@ export default function Navbar(props) {
             <GitHubIcon sx={{height: '45px', width: '45px'}}/>
           </a>
           <a href='https://www.youtube.com/channel/UCVzyGnFTHtAvRaegAGMiT8Q'
+            target={'_blank'}
             style={{
               color: '#ff0000',
             }}
@@ -69,6 +71,7 @@ export default function Navbar(props) {
             <YouTubeIcon sx={{height: '45px', width: '45px'}}/>
           </a>
           <a href='https://www.linkedin.com/in/marcus-overstreet-b6694b11b/'
+            target={'_blank'}
             style={{
               color: '#0076b2',
             }}
@@ -105,27 +108,33 @@ export default function Navbar(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            <RowBox sx={{justifyContent: 'space-evenly'}}>
+            <RowBox sx={{ justifyContent: 'flex-end', alignItems: 'center'}}>
               <a href='https://github.com/Tkogiah'
+                target={'_blank'}
                 style={{
+                  paddingLeft: '100px',
                   color: '#e44828',
                 }}
               >
-                <GitHubIcon sx={{height: '45px', width: '45px'}}/>
+                <GitHubIcon sx={{height: '35px', width: '35px'}}/>
               </a>
               <a href='https://www.youtube.com/channel/UCVzyGnFTHtAvRaegAGMiT8Q'
+                target={'_blank'}
                 style={{
+                  paddingLeft: '16px',
+                  paddingRight: '16px',
                   color: '#ff0000',
                 }}
               >
-                <YouTubeIcon sx={{height: '45px', width: '45px'}}/>
+                <YouTubeIcon sx={{height: '35px', width: '35px'}}/>
               </a>
               <a href='https://www.linkedin.com/in/marcus-overstreet-b6694b11b/'
+                target={'_blank'}
                 style={{
                   color: '#0076b2',
                 }}
               >
-                <LinkedInIcon sx={{height: '45px', width: '45px'}}/>
+                <LinkedInIcon sx={{height: '35px', width: '35px'}}/>
               </a>
             </RowBox>  
           </Typography>

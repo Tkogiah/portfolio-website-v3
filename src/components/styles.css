@@ -15,3 +15,23 @@ body {
 .MuiDrawer-paperAnchorLeft {
   background-color: black !important;
 }
+@media screen and (max-width: 1280px) {
+  .project-display {
+    flex-direction: column !important;
+    max-width: 370px !important;
+  }
+  .project-description {
+    width: 100% !important;
+  }
+  .video {
+    display: none !important;
+  }
+  .video-mobile {
+    display: inline !important;
+    
+  }
+  .video-mobile>a {
+    text-decoration: none !important;
+    color: white;
+  }
+}

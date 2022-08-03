@@ -43,7 +43,7 @@ export const ProjectBox = styled(Box)(({BGC}) => ({
     justifyContent: 'space-evenly',
     flexWrap: 'wrap',
     alignItems: 'center',
-    padding: '6vw 4vw',
+    padding: '6vw 1vw',
     margin: '5px 4vw',
     borderRadius: '16px',
 }))

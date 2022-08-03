@@ -34,8 +34,9 @@ export default function Homepage() {
                 </Fade>
                 </ParallaxPage>
                 <ParallaxPage BGI={imageTwo} 
-                offset={0.3}
+                offset={0.4}
                 speed={-.2}
+                sx={{display: { xs: 'none', sm: 'block' }}}
                 />
                 <ParallaxPage BGI={imageThree} 
                 offset={0.4}
@@ -50,8 +51,10 @@ export default function Homepage() {
                 speed={0.2}
                 />
                 <ParallaxPage BGI={imageFive} 
-                offset={0.6}
+                factor={2}
+                offset={0.4}
                 speed={.4}
+                sx={{backgroundPosition: 'top'}}
                 />
                 <ParallaxPage BGI={imageSix} 
                 offset={1.5}

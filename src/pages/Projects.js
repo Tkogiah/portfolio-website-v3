@@ -27,12 +27,14 @@ export default function Projects() {
                     {projectList.map(project => 
                         {
                         return (
-                            <ProjectBox key={project.id} ref={myRef} BGC={'#2b2a33'}>
-                                <ColumnBox sx={{
-                                    width: '50%',
-                                    paddingRight: '5%',
-                                    alignItems: 'left',
-                                    justifyContent: 'left'
+                            <ProjectBox key={project.id} ref={myRef} BGC={'#2b2a33'}
+                            className='project-display'
+                            >
+                                <ColumnBox className="project-description" sx={{
+                                    width: '50%', 
+                                    alignItems: 'center', 
+                                    justifyContent: 'center',
+                                    padding: '25px 15px 0px 15px'
                                 }}>
                                     
                                     <Typography sx={{ 
@@ -53,15 +55,25 @@ export default function Projects() {
                                         {project.description}
                                     </Typography>
 
-                                    <RowBox sx={{ justifyContent: 'space-around' }}>
+                                    <RowBox sx={{ justifyContent: 'space-evenly', width: '100%' }}>
                                         {project.tags.map(tag => <img alt={tag.title}
                                             src={tag.icon}
                                             style={ICON_STYLES} />
                                         )}
                                     </RowBox>
                                 </ColumnBox>
-                                <ColumnBox sx={{ width: '50%' }}>
-                                    <iframe width="432" height="243" src={project.video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+                                <ColumnBox sx={{ 
+                                width: '50%',
+                                height: '100%', 
+                                alignItems: 'center', 
+                                justifyContent: 'center',
+                                paddingTop: '25px' 
+                                }}>
+                                    <iframe className="video" width="432" height="243" src={project.video[0]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+                                    <Typography className="video-mobile" sx={{display: 'none', fontSize: '30px'}}>
+                                      {project.video[0] ? <a href={project.video[1]} target='_blank'>See Video</a>: ''}  
+                                        
+                                    </Typography>
                                 </ColumnBox>
                             </ProjectBox>
                         )}
