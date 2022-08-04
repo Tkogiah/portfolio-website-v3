@@ -1,7 +1,6 @@
 * {
   margin: 0px;
   padding: 0px;
-  text-align: center;
 }
 html {
   /* background-color: #ffc754; */
@@ -15,6 +14,8 @@ body {
 .MuiDrawer-paperAnchorLeft {
   background-color: black !important;
 }
+
+
 @media screen and (max-width: 1280px) {
   .project-display {
     flex-direction: column !important;
@@ -34,6 +35,22 @@ body {
     text-decoration: none !important;
     color: white;
   }
+  
+}
+@media screen and (max-width: 760px) {
+  .core-values {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .value {
+    justify-content: center !important;
+    text-align: center !important;
+    align-items: center !important;
+    padding: 1vh 10vw !important;
+    width: 100% !important;
+  }
+
 }
 
 /* Card flip in projects page */

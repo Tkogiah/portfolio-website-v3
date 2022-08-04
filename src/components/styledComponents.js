@@ -1,4 +1,4 @@
-import { Box, Icon } from "@mui/material";
+import { Box, Input, Button } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { ParallaxLayer } from "@react-spring/parallax";
 
@@ -19,6 +19,7 @@ export const LayoutBox = styled(Box)(({BGC}) => ({
     boxSizing: 'border-box',
     width: '100%',
     color: 'white',
+    textAlign: 'center'
 
 }))
 export const ColumnBox = styled(Box)(({BGC}) => ({
@@ -55,3 +56,22 @@ export const ParallaxPage = styled(ParallaxLayer)(({BGI}) => ({
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
 }))
+
+export const PrimaryInput = styled(Input)(() => ({
+    textDecoration: 'none',
+    width: '100%',
+    backgroundColor: 'white',
+    margin: '1vh 0',
+    border: `1px solid ${MAIN_COLOR}`,
+    borderRadius: '8px',
+    paddingLeft: '10px'
+  }));
+  
+  export const PrimaryButton = styled(Button)(() => ({
+    background: MAIN_COLOR,
+    color: 'black',
+    width: '300px',
+    fontSize: '15px',
+    paddingTop: '1vh',
+    borderRadius: '30px'
+  }));

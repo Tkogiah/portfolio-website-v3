@@ -142,7 +142,7 @@ export default function Navbar(props) {
               </a>
             </RowBox>  
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+          <Box sx={{ display: { xs: 'none', sm: 'flex' } }}>
             {navItems.map((item) => (
               <Link to={`/${item === 'Home' ? '': item}`}>
               <Button key={navItems.indexOf(item)} sx={{ color: '#fff' }}>

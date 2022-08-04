@@ -6,6 +6,7 @@ import { ColumnBox, LayoutBox, RowBox, MAIN_COLOR, ProjectBox, ICON_STYLES } fro
 import { projectList } from "./ProjectList";
 
 
+
 export default function Projects() {
     const myRef = useRef()
     useEffect(() => {

@@ -17,7 +17,7 @@ const imageSix = 'sixth.png'
 
 export default function Homepage() {
     return (
-        <Box sx={{ margin: '0px', padding: '0px', position: 'realtive'}}>   
+        <Box sx={{ margin: '0px', padding: '0px', position: 'realtive', textAlign: 'center'}}>   
             <Parallax pages={3} style={{backgroundColor: 'black'}}>
                 <ParallaxPage BGI={imageOne} 
                 offset={0}  

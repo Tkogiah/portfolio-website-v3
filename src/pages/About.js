@@ -9,7 +9,7 @@ export default function AboutMe() {
     return (
         <LayoutBox sx={{justifyContent: 'center', paddingTop: '6vw'}}>
             <Navbar />
-            <Typography variant="h2" sx={{padding: '10vh 15vw 0vh 15vw'}}>
+            <Typography className='mobile-title' variant="h2" sx={{padding: '10vh 15vw'}}>
                 {aboutInfo.Main.Title}
             </Typography>
             <ColumnBox sx={{justifyContent: "center"}}>
@@ -21,15 +21,14 @@ export default function AboutMe() {
                     Core Values
                     </Typography>
                 </ColumnBox>
-                <RowBox sx={{
+                <RowBox className="core-values" sx={{
                     backgroundColor: MAIN_COLOR,
                     color: 'black',
                     justifyContent: 'space-evenly',
                     alignItems: 'top',
                     textAlign: 'center'
-
                 }}>
-                    <ColumnBox sx={{color: 'black', padding: '5vh 3vw', width: '50%'}}>
+                    <ColumnBox className="value" sx={{color: 'black', padding: '5vh 3vw', width: '50%'}}>
                         <Typography variant="h4" sx={{padding: '5vh'}}>
                             Honesty
                         </Typography >
@@ -37,7 +36,7 @@ export default function AboutMe() {
                             {aboutInfo.Values.Honesty}
                         </Typography >
                     </ColumnBox>
-                    <ColumnBox sx={{color: 'black', padding: '5vh 3vw', width: '50%'}}>
+                    <ColumnBox className="value" sx={{color: 'black', padding: '5vh 3vw', width: '50%'}}>
                         <Typography variant="h4" sx={{padding: '5vh'}}>
                             Communication
                         </Typography >
@@ -46,21 +45,6 @@ export default function AboutMe() {
                         </Typography >
                     </ColumnBox>
                     
-                </RowBox>
-                <RowBox>
-                    <Typography variant="h5">
-                        
-                    </Typography >
-                </RowBox>
-                <RowBox>
-                    <Typography variant="h5">
-                        
-                    </Typography >
-                </RowBox>
-                <RowBox>
-                    <Typography variant="h5">
-                        
-                    </Typography >
                 </RowBox>
             </ColumnBox>
         </LayoutBox>
