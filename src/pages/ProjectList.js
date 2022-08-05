@@ -9,7 +9,7 @@ export const projectList = [
         tags: [
             {
                 title: 'React',
-                icon: 'logo192.png'
+                icon: 'react.png'
             },
             {
                 title: 'Java Script',
@@ -35,7 +35,7 @@ export const projectList = [
         tags: [
             {
                 title: 'React',
-                icon: 'logo192.png'
+                icon: 'react.png'
             },
             {
                 title: 'Java Script',
@@ -61,7 +61,7 @@ export const projectList = [
         tags: [
             {
                 title: 'React',
-                icon: 'logo192.png'
+                icon: 'react.png'
             },
             {
                 title: 'Java Script',
@@ -87,7 +87,7 @@ export const projectList = [
         tags: [
             {
                 title: 'React',
-                icon: 'logo192.png'
+                icon: 'react.png'
             },
             {
                 title: 'Java Script',
@@ -113,7 +113,7 @@ export const projectList = [
         tags: [
             {
                 title: 'React',
-                icon: 'logo192.png'
+                icon: 'react.png'
             },
             {
                 title: 'Java Script',
