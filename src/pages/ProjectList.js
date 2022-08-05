@@ -108,7 +108,7 @@ export const projectList = [
         title: 'React Landing Page',
         description: 'This was my first project with React. I was just getting familiar with styling and components and how to organize projects in React.',
         video: [],
-        website: '',
+        website: 'https://stellar-moonbeam-249a0b.netlify.app/',
         github: 'https://github.com/Tkogiah/landing-page-react',
         tags: [
             {
