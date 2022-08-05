@@ -2,14 +2,14 @@ import { Box, Fade, Typography } from "@mui/material";
 import Navbar from "../components/Navbar";
 import { Parallax } from "@react-spring/parallax";
 
-import { ColumnBox, LayoutBox, ParallaxPage } from "../components/styledComponents";
+import { ParallaxPage } from "../components/styledComponents";
 
 const imageOne = 'first.png'
 const imageTwo = 'second.png'
 const imageThree = 'third.png'
 const imageFour = 'fourth.png'
 const imageFive = 'fifth.png'
-const imageSix = 'sixth.png'
+// const imageSix = 'sixth.png'
 // const imageSeven = 'seventh.png'
 
 

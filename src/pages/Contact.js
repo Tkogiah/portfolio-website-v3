@@ -1,4 +1,4 @@
-import { Typography, FormControl, InputAdornment } from "@mui/material";
+import { Typography, InputAdornment } from "@mui/material";
 import Navbar from "../components/Navbar";
 import { AccountCircle } from "@mui/icons-material";
 
