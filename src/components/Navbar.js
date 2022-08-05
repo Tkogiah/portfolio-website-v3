@@ -55,7 +55,7 @@ export default function Navbar(props) {
       <Divider  sx={{background: MAIN_COLOR, mx: 5}}/>
       <RowBox sx={{justifyContent: 'space-around', paddingTop: '25px'}}>
           <a href='https://github.com/Tkogiah'
-            target={'_blank'}
+            target={'#blank'}
             style={{
               color: '#e44828',
             }}
@@ -63,7 +63,7 @@ export default function Navbar(props) {
             <GitHubIcon sx={{height: '45px', width: '45px'}}/>
           </a>
           <a href='https://www.youtube.com/channel/UCVzyGnFTHtAvRaegAGMiT8Q'
-            target={'_blank'}
+            target={'#blank'}
             style={{
               color: '#ff0000',
             }}
@@ -71,7 +71,7 @@ export default function Navbar(props) {
             <YouTubeIcon sx={{height: '45px', width: '45px'}}/>
           </a>
           <a href='https://www.linkedin.com/in/marcus-overstreet-b6694b11b/'
-            target={'_blank'}
+            target={'#blank'}
             style={{
               color: '#0076b2',
             }}
@@ -110,7 +110,7 @@ export default function Navbar(props) {
           >
             <RowBox sx={{ justifyContent: 'flex-end', alignItems: 'center'}}>
               <a href='https://github.com/Tkogiah'
-                target={'_blank'}
+                target={'#blank'}
                 style={{
                   paddingLeft: '100px',
                   color: '#e44828',
@@ -120,7 +120,7 @@ export default function Navbar(props) {
                 <GitHubIcon sx={{height: '35px', width: '35px'}}/>
               </a>
               <a href='https://www.youtube.com/channel/UCVzyGnFTHtAvRaegAGMiT8Q'
-                target={'_blank'}
+                target={'#blank'}
                 style={{
                   paddingLeft: '16px',
                   paddingRight: '16px',
@@ -131,7 +131,7 @@ export default function Navbar(props) {
                 <YouTubeIcon sx={{height: '35px', width: '35px'}}/>
               </a>
               <a href='https://www.linkedin.com/in/marcus-overstreet-b6694b11b/'
-                target={'_blank'}
+                target={'#blank'}
                 style={{
                   paddingRight: '8px',
                   color: '#0076b2',
