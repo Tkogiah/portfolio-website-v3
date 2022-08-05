@@ -56,7 +56,7 @@ export const projectList = [
         title: 'State Multi Form',
         description: 'The purpose of this app was to develop more intuitin with the "UseState" hook in React. It is a simple form that holds the user input data in a variable.',
         video: [],
-        website: '',
+        website: 'https://sweet-cocada-670e1e.netlify.app/',
         github: 'https://github.com/Tkogiah/state-multi-form',
         tags: [
             {
