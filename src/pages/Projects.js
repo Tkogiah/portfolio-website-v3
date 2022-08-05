@@ -18,7 +18,7 @@ export default function Projects() {
             <Navbar />
             <LayoutBox sx={{justifyContent: 'center', padding: '0px 6vw 6vw 6vw'}}>
                 <Typography variant="h2" sx={{padding: '10vh 15vw'}}>
-                    Recent Projects
+                    Projects
                 </Typography>
                 <ColumnBox sx={{
                     justifyContent: 'center', 
