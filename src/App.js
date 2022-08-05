@@ -4,9 +4,8 @@ import Homepage from './pages/Home';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 
-
-
 import './components/styles.css';
+
 
 
 export default function App() {
