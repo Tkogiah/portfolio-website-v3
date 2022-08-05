@@ -43,7 +43,7 @@ export default function Projects() {
                                         '&:hover': {
                                             textShadow: `1px 1px ${MAIN_COLOR}`
                                     }}}>
-                                       <a href={project.github} target='#blank' style={{
+                                       <a href={project.website} target='#blank' style={{
                                         textDecoration: 'none',
                                         color: 'inherit'
                                         }} >
@@ -86,7 +86,7 @@ export default function Projects() {
                                         display: 'none', 
                                         fontSize: '25px',
                                     }}>
-                                      {project.video[0] ? <a style={{paddingBottom: '10%'}} href={project.video[1]} target='_blank'>See Video</a>: ''}  
+                                      {project.video[0] ? <a style={{paddingBottom: '10%'}} href={project.video[1]} target='#blank'>See Video</a>: ''}  
                                         
                                     </Typography>
                                 </ColumnBox>
