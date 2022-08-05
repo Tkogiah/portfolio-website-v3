@@ -3,7 +3,7 @@ export const projectList = [
         id: 0,
         title: 'My personal website',
         description: "My original website marcusoverstreet.com was built with pagefly but after becoming comfortable with React I wanted to try and build one myself. It isn't perfect and I have many little bells and whistles I will be adding to it. This was my first attempt using parallax pages. The biggest struggle was fixing the client side rendering on refresh.",
-        video: [],
+        video: ['https://www.youtube.com/embed/H1h8ez1OtsE', 'https://youtu.be/H1h8ez1OtsE'],
         website: 'https://www.marcusoverstreet.com/',
         github: 'https://github.com/Tkogiah/portfolio-website-v3',
         tags: [
