@@ -68,10 +68,13 @@ export const PrimaryInput = styled(Input)(() => ({
   }));
   
   export const PrimaryButton = styled(Button)(() => ({
-    background: MAIN_COLOR,
+    backgroundColor: MAIN_COLOR,
     color: 'black',
     width: '300px',
     fontSize: '15px',
     paddingTop: '1vh',
-    borderRadius: '30px'
+    borderRadius: '30px',
+    '&:hover': {
+        background: 'white'
+    }
   }));

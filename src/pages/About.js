@@ -7,7 +7,7 @@ import { aboutInfo } from "./AboutInfo";
 
 export default function AboutMe() {
     return (
-        <LayoutBox sx={{justifyContent: 'center', paddingTop: '6vw'}}>
+        <LayoutBox sx={{justifyContent: 'center', paddingTop: '0px 6vw 6vw 6vw'}}>
             <Navbar />
             <Typography className='mobile-title' variant="h2" sx={{padding: '10vh 15vw'}}>
                 {aboutInfo.Main.Title}

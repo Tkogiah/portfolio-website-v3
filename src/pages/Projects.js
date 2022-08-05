@@ -16,7 +16,7 @@ export default function Projects() {
     return (
         <LayoutBox>
             <Navbar />
-            <LayoutBox sx={{justifyContent: 'center', padding: '6vw'}}>
+            <LayoutBox sx={{justifyContent: 'center', padding: '0px 6vw 6vw 6vw'}}>
                 <Typography variant="h2" sx={{padding: '10vh 15vw'}}>
                     Recent Projects
                 </Typography>
@@ -35,28 +35,28 @@ export default function Projects() {
                                     width: '50%', 
                                     alignItems: 'center', 
                                     justifyContent: 'center',
-                                    padding: '25px 15px 0px 15px'
+                                    padding: '25px 15px 25px 15px'
                                 }}>
                                     
                                     <Typography sx={{ 
                                         fontSize: '40px',
                                         '&:hover': {
                                             textShadow: `1px 1px ${MAIN_COLOR}`
-                                        }}}>
+                                    }}}>
                                        <a href={project.github} target='#blank' style={{
                                         textDecoration: 'none',
                                         color: 'inherit'
-                                    }} >
+                                        }} >
                                             {project.title}
                                         </a> 
                                     </Typography>
-
-
                                     <Typography sx={{ padding: '5% 0% 10% 0%' }}>
                                         {project.description}
                                     </Typography>
-
-                                    <RowBox sx={{ justifyContent: 'space-evenly', width: '100%' }}>
+                                    <RowBox sx={{ 
+                                        justifyContent: 'space-evenly', 
+                                        width: '100%',
+                                        paddingBottom: '5%' }}>
                                         {project.tags.map(tag => 
                                             <div className="flip-card">
                                             <div className="flip-card-inner">
@@ -79,14 +79,14 @@ export default function Projects() {
                                 height: '100%', 
                                 alignItems: 'center', 
                                 justifyContent: 'center',
-                                paddingTop: '25px' 
+                                paddingTop: '' 
                                 }}>
                                     <iframe className="video" width="432" height="243" src={project.video[0]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
                                     <Typography className="video-mobile" sx={{
                                         display: 'none', 
                                         fontSize: '25px',
                                     }}>
-                                      {project.video[0] ? <a href={project.video[1]} target='_blank'>See Video</a>: ''}  
+                                      {project.video[0] ? <a style={{paddingBottom: '10%'}} href={project.video[1]} target='_blank'>See Video</a>: ''}  
                                         
                                     </Typography>
                                 </ColumnBox>
