@@ -28,7 +28,7 @@ export const projectList = [
     {   
         id: 1,
         title: 'Upwork Clone',
-        description: 'This was a project I built that helped me to play with and learn React to a point where I feel comfortable freely exploring and building in React. This project was designed to help me get used to using material components, react router, and one way data flow in React.',
+        description: '(NOT MOBILE FRIENDLY YET) This was a project I built that helped me to play with and learn React to a point where I feel comfortable freely exploring and building in React. This project was designed to help me get used to using material components, react router, and one way data flow in React.',
         video: ['https://www.youtube.com/embed/TheRn_YUgtw', 'https://youtu.be/TheRn_YUgtw'],
         website: 'https://warm-bavarois-ec9384.netlify.app/',
         github: 'https://github.com/Tkogiah/upwork-clone',
