@@ -1,4 +1,4 @@
-import { Box, Fade, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Navbar from "../components/Navbar";
 import { Parallax } from "@react-spring/parallax";
 
@@ -23,15 +23,7 @@ export default function Homepage() {
                 offset={0}  
                 speed={-1}
                 >
-                <Fade in={true} timeout={1500} >
-                    {/* <Typography variant="h2" sx={{
-                        pt: '30vh',
-                        transition: 'opacity 1s ease',
-                        fontWeight: 'bold'
-                    }} >
-                        Hello, I am Marcus 
-                    </Typography> */}
-                </Fade>
+                
                 </ParallaxPage>
                 <ParallaxPage BGI={imageTwo} 
                 offset={0.4}
