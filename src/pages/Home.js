@@ -24,13 +24,13 @@ export default function Homepage() {
                 speed={-1}
                 >
                 <Fade in={true} timeout={1500} >
-                    <Typography variant="h2" sx={{
+                    {/* <Typography variant="h2" sx={{
                         pt: '30vh',
                         transition: 'opacity 1s ease',
                         fontWeight: 'bold'
                     }} >
                         Hello, I am Marcus 
-                    </Typography>
+                    </Typography> */}
                 </Fade>
                 </ParallaxPage>
                 <ParallaxPage BGI={imageTwo} 
