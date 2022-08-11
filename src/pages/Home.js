@@ -4,12 +4,12 @@ import { Parallax } from "@react-spring/parallax";
 
 import { ParallaxPage } from "../components/styledComponents";
 
-const imageOne = 'first.png'
+//const imageOne = 'first.png'
 const imageTwo = 'second.png'
 const imageThree = 'third.png'
 const imageFour = 'fourth.png'
 const imageFive = 'fifth.png'
-// const imageSix = 'sixth.png'
+const imageSix = 'sixth.png'
 // const imageSeven = 'seventh.png'
 
 
@@ -19,11 +19,17 @@ export default function Homepage() {
     return (
         <Box sx={{ margin: '0px', padding: '0px', position: 'realtive', textAlign: 'center'}}>   
             <Parallax pages={3} style={{backgroundColor: 'black'}}>
-                <ParallaxPage BGI={imageOne} 
+                <ParallaxPage BGI={imageSix} 
                 offset={0}  
                 speed={-1}
                 >
-                
+                <Typography variant="h2" sx={{
+                        pt: '30vh',
+                        transition: 'opacity 2s ease',
+                        color: 'white'
+                    }} >
+                        Marcus Overstreet 
+                    </Typography>
                 </ParallaxPage>
                 <ParallaxPage BGI={imageTwo} 
                 offset={0.4}
