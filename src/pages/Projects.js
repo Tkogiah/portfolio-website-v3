@@ -17,8 +17,11 @@ export default function Projects() {
         <LayoutBox>
             <Navbar />
             <LayoutBox sx={{justifyContent: 'center', padding: '0px 6vw 6vw 6vw'}}>
-                <Typography variant="h2" sx={{padding: '10vh 15vw'}}>
+                <Typography variant="h2" sx={{padding: '10vh 15vw 0vh 15vw'}}>
                     Projects
+                </Typography>
+                <Typography variant="h6" sx={{padding: '0vh 15vw 15vh 15vw'}}>
+                    (click on titles to see project)
                 </Typography>
                 <ColumnBox sx={{
                     justifyContent: 'center', 
