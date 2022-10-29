@@ -1,5 +1,26 @@
 export const projectList = [
     {
+        id: 8,
+        title: 'Memorable Coffee',
+        description: "I have always wanted to learn how to market and since I know a guy (he married my sister) who loves to roast coffee but hates marketing we figured it was a good match. The thing is...I have been using Shopify for over a year and have built out and helped modify plenty of Shopify websites (both front and back end). Maybe in the future I will compile them all into a working resume but for now this is basically the pinnacle of my current design/brand abilities and copy. I had a friend help me out with some of the site copy ideas but the overall architecture of this site was mine. We'll see if this is as profitable as it was enjoyable to create.",
+        video: [],
+        website: 'https://memorablecoffee.com/',
+        tags: [
+            {
+                title: 'CSS',
+                icon: 'css-3.png'
+            },
+            {
+                title: 'Shopify',
+                icon: 'shopify-2.png'
+            },
+            {
+                title: 'HTML',
+                icon: 'html-5.png'
+            }
+        ]
+    },
+    {
         id: 7,
         title: 'My BoardGame',
         description: "Back in 2014 I made a boardgame and when I was all finished I only ever had one complaint from people `there's too much math`. So now that I know how to code I decided to build this. No this isn't done but it is a working version. This project taught me so much about project management, object oriented programming, algorithms and so many other things. I had so much fun and I even made the music for this!!!",
